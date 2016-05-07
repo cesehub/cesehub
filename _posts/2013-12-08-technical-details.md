@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: post-no-cover
 title: Technical Details
-cover: cover.gif
 date:   2013-12-08 00:00:00
 categories: posts
 ---

@@ -1,6 +1,5 @@
 window.onload = function() {
   var sidebar = document.getElementById("sidebar");
-  var sidebarButton = document.getElementById("sidebar-button");
 
   function openSidebar(e) {
     if (sidebar.className.indexOf("slideIn") != -1) {
@@ -10,5 +9,4 @@ window.onload = function() {
     }
   }
 
-  sidebarButton.addEventListener("click", openSidebar, false);
 };

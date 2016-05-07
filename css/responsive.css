@@ -17,10 +17,6 @@
 }
 
 @media (max-width:1090px) {
-  #logo {
-    max-width: 100px;
-  }
-
   #title {
     font-size: 3em;
   }
@@ -50,10 +46,6 @@
  * iPhone width
  **/
 @media (max-width:640px) {
-  #logo {
-    max-width: 75px;
-  }
-
   #cover-photo-container {
     text-align: center;
   }

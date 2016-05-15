@@ -4,6 +4,7 @@ title: Home
 cover: cover.gif
 date:   2013-12-09 12:00:00
 categories: posts
+show: true
 ---
 
 ## Background

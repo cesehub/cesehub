@@ -29,9 +29,11 @@
           <ul class="posts-list">
             {% for post in site.posts %}
               <li class="post-link">
-                <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-                  {{ post.title }}
-                </a>
+                {% if post.show == true %}
+                  <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+                {% endif %}
               </li>
             {% endfor %}
           </ul>

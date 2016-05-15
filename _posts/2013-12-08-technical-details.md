@@ -3,6 +3,7 @@ layout: post-no-cover
 title: Technical Details
 date:   2013-12-08 00:00:00
 categories: posts
+show: true
 ---
 
 The NASA Technical Memorandum 1998-208843 is given below in PostScript and PDF formats.

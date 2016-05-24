@@ -1,4 +1,4 @@
-name: Flex
+name: The CESE Hub
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 url: http://cesehub.org/ 

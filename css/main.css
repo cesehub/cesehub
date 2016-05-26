@@ -128,6 +128,17 @@ a:hover {
   margin-top: 3em;
 }
 
+#cover-photo {
+    /**
+     * align cover-photo with the content text of posts
+     *
+     * so please note the attribute values are highly refered
+     * to class post.
+     */
+    max-width: 725px;
+    clear: both;
+}
+
 #title {
   color: #494949;
   margin-bottom: 0.35em;

@@ -1,8 +1,8 @@
 ---
 layout: post-no-cover
-title: Publication
-date:   2013-05-01 00:00:00
-categories: posts
+title: Publications
+date: 2016-05-29 07:02:00 +0800
+permalink: /publications
 show: true
 ---
 

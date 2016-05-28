@@ -1,8 +1,8 @@
 ---
 layout: post-no-cover
-title: codes
-date:   2013-04-01 00:00:00
-categories: posts
+title: Codes
+date: 2016-05-29 07:03:00 +0800
+permalink: /codes
 show: true
 ---
 

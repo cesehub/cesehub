@@ -23,25 +23,46 @@
     <div class="site">
       <div class="sidebar" id="sidebar">
         <div class="header">
-          <span class="tagline">Conservation Element and Solution Element</span>
-        </div>
-        <div class="posts">
           <ul class="posts-list">
-            {% for post in site.posts %}
+            {% for page in site.pages %} {% if page.url == '/' %}
               <li class="post-link">
-                {% if post.show == true %}
-                  <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-                    {{ post.title }}
-                  </a>
-                {% endif %}
+                <a class="post-title" href="{{ site.baseurl }}{{ page.url }}">
+                    {{ page.title }}
+                </a>
               </li>
-            {% endfor %}
+            {% endif %} {% endfor %}
+            {% for page in site.pages %} {% if page.url == '/publications' %}
+              <li class="post-link">
+                <a class="post-title" href="{{ site.baseurl }}{{ page.url }}">
+                  {{ page.title }}
+                </a>
+              </li>
+            {% endif %} {% endfor %}
+            {% for page in site.pages %} {% if page.url == '/codes' %}
+              <li class="post-link">
+                <a class="post-title" href="{{ site.baseurl }}{{ page.url }}">
+                  {{ page.title }}
+                </a>
+              </li>
+            {% endif %} {% endfor %}
+            {% for page in site.pages %} {% if page.url == '/links' %}
+              <li class="post-link">
+                <a class="post-title" href="{{ site.baseurl }}{{ page.url }}">
+                  {{ page.title }}
+                </a>
+              </li>
+            {% endif %} {% endfor %}
+            {% for page in site.pages %} {% if page.url == '/updates' %}
+              <li class="post-link">
+                <a class="post-title" href="{{ site.baseurl }}{{ page.url }}">
+                  {{ page.title }}
+                </a>
+              </li>
+            {% endif %} {% endfor %}
           </ul>
         </div>
         <div class="footer">
           <span id="footer-links">
-            <!--a href="" class="footer-link">About</a> <span class="separator">&bull;</span-->
-            <!--a href="" class="footer-link">Twitter</a> <span class="separator">&bull;</span-->
             <a href="https://github.com/cesehub/cesehub" class="footer-link">GitHub</a>
           </span>
         </div>

@@ -2,8 +2,8 @@
 layout: post
 title: Home
 cover: cover.gif
-date:   2014-01-01 00:00:00
-categories: posts
+date: 2016-05-29 07:00:00 +0800
+permalink: /
 show: true
 ---
 

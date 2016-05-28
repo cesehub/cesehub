@@ -1,7 +1,7 @@
 ---
 layout: post-no-cover
 title: CESE working group members
-date:   2013-12-07 00:00:00
+date:   2013-11-01 00:00:00
 categories: posts
 show: true
 ---

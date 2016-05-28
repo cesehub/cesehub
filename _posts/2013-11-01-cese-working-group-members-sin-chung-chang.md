@@ -1,16 +1,16 @@
 ---
 layout: post-no-cover
 title: CESE working group members
-date:   2013-12-07 00:00:00
+date:   2013-11-01 00:00:00
 categories: posts
 show: false
 ---
 
-__Ken Loh__
+__Sin-Chung Chang__
 
-Taitech Inc.
+[Engine Systems Branch](http://www.grc.nasa.gov/WWW/enginesys/)
 
-[NASA Glenn Research Center](http://www.grc.nasa.gov/)
+NASA Glenn Research Center
 
 21000 Brookpark Road
 
@@ -24,8 +24,8 @@ Branch: [Engine Systems Branch](http://www.grc.nasa.gov/WWW/enginesys/)
 
 Org Code: RTS
 
-Phone: (216) 433-3981
+Phone: (216) 433-5874
 
 Fax: (216) 433-5802
 
-e-mail: <a href="mailto:fsloh@turbot.lerc.nasa.gov">Ken Loh<a/>
+e-mail: <a href="mailto:Sin-Chung.Chang-1@nasa.gov">Sin-Chung Chang<a/>

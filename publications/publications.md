@@ -3,7 +3,6 @@ layout: post-no-cover
 title: Publications
 date: 2016-05-29 07:02:00 +0800
 permalink: /publications
-show: true
 ---
 
 

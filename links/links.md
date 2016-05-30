@@ -3,7 +3,6 @@ layout: post-no-cover
 title: Links
 date: 2016-05-29 07:05:00 +0800
 permalink: /links
-show: true
 ---
 
 Point of contact:

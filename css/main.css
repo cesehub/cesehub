@@ -230,6 +230,14 @@ a:hover {
   border-right: 1px solid #e7e7e7;
 }
 
+.sidebar a {
+  color: #444;
+}
+
+.sidebar a:hover {
+  color: #777;
+}
+
 .content {
   padding-left: 2.125em;
 }

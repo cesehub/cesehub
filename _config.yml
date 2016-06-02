@@ -1,4 +1,4 @@
 name: The CESE Hub
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 url: http://cesehub.org/ 

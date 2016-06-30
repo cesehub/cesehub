@@ -44,7 +44,7 @@ You should see two folders on your local machine now. One is `cesehub` and anoth
 
 ### Edit the Source Code that You Just Cloned to Your Local Machine
 
-Please go to the folder `cese-dev`, create the branch for development by
+Please go to the folder `cesehub-dev`, create the branch for development by
 
 ```
 git checkout -b dev
@@ -56,7 +56,7 @@ Use your favorite editor or IDE (Integrated Development Environment) to edit the
 
 #### Build and Run the Page Locally
 
-A static website is built from the source by [jekyll](https://jekyllrb.com/). You may need to install jekyll. If you already have it, please issue this command to build the code in the working copy **cesehub-dev**:
+A static website is built from the source by [jekyll](https://jekyllrb.com/). You may need to install jekyll. If you already have it, please issue this command to build the code in the working copy `cesehub-dev`:
 
 ```
 jekyll b
@@ -76,7 +76,7 @@ http://127.0.0.1:4000/
 
 ### Commit Your Change
 
-If everything looks good, you can commit the change. Please open the terminal and go to your working directory `cese-dev`. Use this command to check what you have edited:
+If everything looks good, you can commit the change. Please open the terminal and go to your working directory `cesehub-dev`. Use this command to check what you have edited:
 
 ```
 git diff
@@ -134,7 +134,7 @@ Now you are ready to publish you code. Please go to your working copy cesehub-de
 git push https://github.com/<your-github-account-name>/cesehub.git dev
 ```
 
-Before doing this, make sure you are in the folder cese-dev.
+Before doing this, make sure you are in the folder `cesehub-dev`.
 
 ### Create a Merge Request and Participate the Review
 

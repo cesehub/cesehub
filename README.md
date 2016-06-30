@@ -26,13 +26,13 @@ You have to clone the forked repository to your local machine before you can edi
 
 The URL of your cesehub repository on github should look like `https://github.com/<your account name>/cesehub/`. There is a button **Clone or download**. Click it and copy the URL of **Clone with HTTPS** to get `<your-repo-url>` which will be used later.
 
-Please open your termial application of your machine, and type in the following command:
+Please open your termial application of your machine, and type the following command:
 
 ```
 git clone <your-repo-url>
 ```
 
-`<you-repo-url>` is the URL you just got on your github page. The `git` command needs to be installed in your system. Now you should see a folder named **cesehub** on your local machine. This local repository is associated to your remote github fork. You could share the remote URL to the others. We called this is a "staging site".
+`<you-repo-url>` is the URL you just got on your github page. Now you should see a folder named **cesehub** on your local machine. This local repository is associated to your remote github fork. You could share the remote URL to the others. We called this is a "staging site".
 
 Finally, clone the source code directly from the cesehub upstream:
 
@@ -42,7 +42,7 @@ git clone https://github.com/cesehub/cesehub/ cesehub-dev
 
 You should see two folders on your local machine now. One is `cesehub` and another is `cesehub-dev`.
 
-### Edit the Source Code That You Just Cloned to Your Local Machine
+### Edit the Source Code that You Just Cloned to Your Local Machine
 
 Please go to the folder `cese-dev`, create the branch for development by
 
@@ -95,7 +95,7 @@ If your change is related to a github issue, please use the commit message like 
 git commit -m 'Ref issue #xxx your commit message'
 ```
 
-### (Optional) Share How This Change Looks like to Others
+### (Optional) Share How This Change Looks Like to Others
 
 Sometimes you may want to know how the other people comments this change. Here is a way for you to share your latest change by sharing a static website hosted by github. That is, merge the change to the working copy cesehub and use the forementioned link `https://github.com/<your account name>/cesehub/`.
 

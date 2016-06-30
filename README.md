@@ -16,7 +16,7 @@ If you are interested in contributing to this website, please refer to the follo
 
 ### Fork the Repository
 
-First, you need to get the source of the website by "forking" it. That is, to get a derived copy which share the history of the source repository.
+First, you need to get the source of the website by "forking" it. That is, to get a derived copy which shares the history of the source repository.
 
 Click **Fork** button on the top-right of this [cesehub](https://github.com/cesehub/cesehub/) github page to fork it to your github account. (You need a github account ready.)
 
@@ -62,7 +62,7 @@ A static website is built from the source by [jekyll](https://jekyllrb.com/). Yo
 jekyll b
 ```
 
-The start the static website on your local machine:
+Then start the static website on your local machine:
 
 ```
 jekyll s

@@ -104,21 +104,50 @@ git merge dev
 
 Your terminal will prompt for the commit message with default editor. Save it to confirm this merge.
 
+#### Tweak the Site Configuration of Your Customized CESE Hub
+
+In order to make your cusomized CESE Hub access its associated resources like images correctly, before we push it to github, we suggest to tweak the configuration of the branch gh-pages of your fork.
+
+##### Remove CNAME
+
+The file CNAME in your fork will make the domain name duplicate and conflict with [CESE Hub](http://cesehub.org/). Please remove it to suppress the warning emails from github.
+
+First, please go to your working copy, and remove CNAME. Make sure that you are removing CNAME of the branch gp-pages of your working copy.
+
+```
+git rm CNAME
+git commit -m 'remove CNAME to avoid to conflict.'
+```
+
+##### Use correct URL to Access the Resources
+Secondly, give the base URL name to tell github which URL name you want to use. Please try to find the line begin with `url` and then change this line to be:
+
+```
+baseurl: /cesehub
+```
+
+The above change should look like [this commit](https://github.com/cesehub/cesehub/pull/20/files).
+
+Finally, commit this configuration change by
+
+```
+git add -u
+git commit -m 'change the url name.'
+```
+
+
+
 #### Publish to Your gh-pages Branch
 
-Please issue this command in your working copy cesehub
+Please issue this command in your working copy
 
 ```
 git push
 ```
 
-and go to this link with your browser to see your change.
+Now there should be a duplicate CESE Hub, which is your customized CESE Hub: `https://<your-github-account-name>.github.io/cesehub`.
 
-```
-https://<your-github-account-name>.github.io/cesehub
-```
-
-If everything looks OK, you can share this link to others.
+You could use your browser to confirm this. If everything looks OK, you can share this link to others.
 
 ### Publish Your Change to Your Github Account
 

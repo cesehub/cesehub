@@ -152,7 +152,7 @@ You could use your browser to confirm this. If everything looks OK, you can shar
 
 ### Publish Your Change to Your Github Account
 
-Because our gh-pages branch here is without 'CNAME' file and its configuration has been changed, this ph-pages branch is not suitable for further pull request of merging if you only focus on modifying the content of this website. Instead, we choose to publish all of changes through the 'dev' branch and use the gh-pages branch only for checking those modifications. That's the philosophy here.
+Because our gh-pages branch here is without 'CNAME' file and its configuration has been changed, this gh-pages branch is not suitable for further pull request of merging if you only focus on modifying the content of this website. Instead, we choose to publish all of changes through the 'dev' branch and use the gh-pages branch only for checking those modifications. That's the philosophy here.
 
 Now you are ready to publish you code. Please go to your `dev` branch by
 

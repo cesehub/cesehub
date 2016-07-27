@@ -6,4 +6,4 @@ permalink: /codes
 ---
 
 
-This page is under construction. :D
+This page is under construction.

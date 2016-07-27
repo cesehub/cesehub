@@ -92,7 +92,7 @@ git commit -m 'Ref issue #xxx your commit message'
 
 Sometimes you may want to know how the other people comments this change. Here is a way for you to share your latest change by sharing a static website hosted by github. That is, merge the change to the branch `gh-pages` of your working copy `cesehub`, publish it, and use the link `https://<your-github-account-name>.github.io/cesehub`.
 
-#### Merge the Branch dev to gh-pages (LOCAL)
+#### Merge the Branch dev to gh-pages on Your Local Working Copy
 
 We want to use your cesehub fork on github to build and host your customized static website CESE Hub by github, so we need to merge the change from the branch `dev` of your local working copy, and then publish the change to the gh-pages branch of your cesehub fork, which will be done in the following parts.
 
@@ -138,7 +138,7 @@ git commit -m 'change the url name.'
 
 
 
-#### Publish Your gh-pages Branch to Your cesehub Folk on GitHub)
+#### Publish Your gh-pages Branch to Your cesehub Fork on GitHub
 
 Please issue this command in your working copy
 
@@ -152,7 +152,7 @@ You could use your browser to confirm this. If everything looks OK, you can shar
 
 ### Publish Your Change to Your Github Account
 
-Because our gh-pages branch here is without 'CNAME' file and its configuration has been changed, this gh-pages branch is not suitable for further pull request of merging if you only focus on modifying the content of this website. Instead, we choose to publish all of changes through the 'dev' branch and use the gh-pages branch only for checking those modifications. That's the philosophy here.
+Because our gh-pages branch here is without 'CNAME' file and its configuration has been changed, this gh-pages branch is not suitable for further pull request of merging if you only focus on modifying the content of this website. Instead, we choose to publish all of changes through the 'dev' branch and use the gh-pages branch only for checking those modifications.
 
 Now you are ready to publish you code. Please go to your `dev` branch by
 

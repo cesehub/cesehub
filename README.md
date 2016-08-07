@@ -1,5 +1,6 @@
 # The CESE Hub
-This repository is for [The CESE Hub](http://cesehub.org/). The CESE Hub is a web site to introduce and collect information for [the space-time conservation element and solution element (CESE) method](http://www.grc.nasa.gov/WWW/microbus/).
+This repository is for [The CESE Hub](http://cesehub.org/).
+The CESE Hub is a web site to introduce and collect information for [the space-time conservation element and solution element (CESE) method](http://www.grc.nasa.gov/WWW/microbus/).
 
 ## Welcome to Contribute Code to This Website
 
@@ -26,7 +27,7 @@ You have to clone the forked repository to your local machine before you can edi
 
 The URL of your cesehub repository on github should look like `https://github.com/<your account name>/cesehub/`. There is a button **Clone or download**. Click it and copy the URL of **Clone with HTTPS** to get `<your-repo-url>` which will be used later.
 
-Please open your termial application of your machine, and type the following command:
+Please open your terminal application of your machine, and type the following command:
 
 ```
 git clone <your-repo-url>
@@ -34,29 +35,22 @@ git clone <your-repo-url>
 
 `<you-repo-url>` is the URL you just got on your github page. Now you should see a folder named **cesehub** on your local machine. This local repository is associated to your remote github fork. You could share the remote URL to the others. We called this is a "staging site".
 
-Finally, clone the source code directly from the cesehub upstream:
-
-```
-git clone https://github.com/cesehub/cesehub/ cesehub-dev
-```
-
-You should see two folders on your local machine now. One is `cesehub` and another is `cesehub-dev`.
-
 ### Edit the Source Code that You Just Cloned to Your Local Machine
 
-Please go to the folder `cesehub-dev`, create the branch for development by
+Please go to the folder `cesehub`, create the branch for development by
 
 ```
 git checkout -b dev
 ```
 
+Now you have a branch `dev` and you are in the `dev` branch of your local working copy `cesehub`.
 Use your favorite editor or IDE (Integrated Development Environment) to edit the code.
 
 ### Test Your Change
 
 #### Build and Run the Page Locally
 
-A static website is built from the source by [jekyll](https://jekyllrb.com/). You may need to install jekyll. If you already have it, please issue this command to build the code in the working copy `cesehub-dev`:
+A static website is built from the source by [jekyll](https://jekyllrb.com/). You may need to install jekyll. If you already have it, please issue this command to build the code in the working copy `cesehub`:
 
 ```
 jekyll b
@@ -97,44 +91,85 @@ git commit -m 'Ref issue #xxx your commit message'
 
 ### (Optional) Share How This Change Looks Like to Others
 
-Sometimes you may want to know how the other people comments this change. Here is a way for you to share your latest change by sharing a static website hosted by github. That is, merge the change to the working copy cesehub and use the forementioned link `https://github.com/<your account name>/cesehub/`.
+Sometimes you may want to know how the other people comments this change. Here is a way for you to share your latest change by sharing a static website hosted by github. That is, merge the change to the branch `gh-pages` of your working copy `cesehub`, publish it, and use the link `https://<your-github-account-name>.github.io/cesehub`.
 
-#### Merge cesehub-dev to cesehub
+#### Merge the Branch dev to gh-pages on Your Local Working Copy
 
-We want to use the working copy cesehub to build and host the static website CESE Hub on github, so we need to merge the change from the working folder cesehub-dev, and then publich the change to the gh-pages branch of your cesehub fork.
+We want to use your cesehub fork on github to build and host your customized static website CESE Hub by github, so we need to merge the change from the branch `dev` of your local working copy, and then publish the change to the gh-pages branch of your cesehub fork, which will be done in the following parts.
+
 Please go to the working folder **cesehub** and then issue this command
 
 ```
-git pull ../cesehub-dev
+git checkout gh-pages
+git merge dev
 ```
 
-Your terminal will prompt for the commit message with default editor. Save it to confirm this merge.
+Your terminal will maybe prompt for the commit message with default editor. Save it to confirm this merge. Sometimes it will only show the resulting message of merging on the console without any prompt. This is dependent on the mode of this merging.
 
-#### Publish to Your gh-pages Branch
+#### Tweak the Site Configuration of Your Customized CESE Hub
 
-Please issue this command in your working copy cesehub
+In order to make your cusomized CESE Hub access its associated resources like images correctly, before we push it to github, we suggest to tweak the configuration of the branch gh-pages of your fork.
+
+##### Remove CNAME
+
+The file CNAME in your fork will make the domain name duplicate and conflict with [CESE Hub](http://cesehub.org/). Please remove it to suppress the warning emails from github.
+
+First, please go to your working copy, and remove CNAME. Make sure that you are removing CNAME of the branch gp-pages of your working copy.
+
+```
+git rm CNAME
+git commit -m 'remove CNAME to avoid to conflict.'
+```
+
+##### Use correct URL to Access the Resources
+Secondly, give the base URL name to tell github which URL name you want to use. Please try to find the line begin with `url` and then change this line to be:
+
+```
+baseurl: /cesehub
+```
+
+The above change should look like [this commit](https://github.com/cesehub/cesehub/pull/20/files).
+
+Finally, commit this configuration change by
+
+```
+git add -u
+git commit -m 'change the url name.'
+```
+
+
+
+#### Publish Your gh-pages Branch to Your cesehub Fork on GitHub
+
+Please issue this command in your working copy
 
 ```
 git push
 ```
 
-and go to this link with your browser to see your change.
+Now there should be a duplicate CESE Hub, which is your customized CESE Hub: `https://<your-github-account-name>.github.io/cesehub`.
 
-```
-https://<your-github-account-name>.github.io/cesehub
-```
-
-If everything looks OK, you can share this link to others.
+You could use your browser to confirm this. If everything looks OK, you can share this link to others.
 
 ### Publish Your Change to Your Github Account
 
-Now you are ready to publish you code. Please go to your working copy cesehub-dev and issue this command:
+If you have walked through the optional steps to remove CNAME or tweak the url of `_config.yml`, please revert the change.
+This is because these files, `CNAME` and `_config.yml`, of the target branch, gh-pages of cesehub repository, should not be changed to make the `cesehub.org` keep on working normally.
+We only focus on modifying the contents of this website, use `dev` branch to host the change of the website contents, and use `gh-pages` of your repository to check your content modification.
+
+Now you are ready to publish you code. Please go to your `dev` branch by
 
 ```
-git push https://github.com/<your-github-account-name>/cesehub.git dev
+git checkout dev
 ```
 
-Before doing this, make sure you are in the folder `cesehub-dev`.
+and issue this command:
+
+```
+git push origin dev
+```
+
+Before doing this, make sure you are in the `dev` branch of your working copy.
 
 ### Create a Merge Request and Participate the Review
 
